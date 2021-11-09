@@ -17,6 +17,7 @@
 		0050BA3A273A13FD00AA27A4 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA39273A13FD00AA27A4 /* PhotoPicker.swift */; };
 		0050BA3D273A141A00AA27A4 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA3C273A141A00AA27A4 /* CameraPicker.swift */; };
 		0050BA4B273A7B3C00AA27A4 /* ChiCatDog.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA4A273A7B3C00AA27A4 /* ChiCatDog.mlmodel */; };
+		0050BA50273AD40400AA27A4 /* Animals.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA4F273AD40400AA27A4 /* Animals.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0050BA39273A13FD00AA27A4 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		0050BA3C273A141A00AA27A4 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 		0050BA4A273A7B3C00AA27A4 /* ChiCatDog.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ChiCatDog.mlmodel; sourceTree = "<group>"; };
+		0050BA4F273AD40400AA27A4 /* Animals.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Animals.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				0050BA2127397CB400AA27A4 /* AppDelegate.swift */,
 				0050BA4A273A7B3C00AA27A4 /* ChiCatDog.mlmodel */,
+				0050BA4F273AD40400AA27A4 /* Animals.mlmodel */,
 				0050BA2327397CB400AA27A4 /* SceneDelegate.swift */,
 				0050BA2527397CB400AA27A4 /* ViewController.swift */,
 				0050BA39273A13FD00AA27A4 /* PhotoPicker.swift */,
@@ -153,6 +156,7 @@
 				0050BA2C27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld in Sources */,
 				0050BA2227397CB400AA27A4 /* AppDelegate.swift in Sources */,
 				0050BA3A273A13FD00AA27A4 /* PhotoPicker.swift in Sources */,
+				0050BA50273AD40400AA27A4 /* Animals.mlmodel in Sources */,
 				0050BA3D273A141A00AA27A4 /* CameraPicker.swift in Sources */,
 				0050BA2427397CB400AA27A4 /* SceneDelegate.swift in Sources */,
 				0050BA4B273A7B3C00AA27A4 /* ChiCatDog.mlmodel in Sources */,

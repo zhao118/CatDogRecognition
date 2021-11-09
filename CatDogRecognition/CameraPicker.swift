@@ -46,7 +46,8 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         }
         //2.加载模型
         //guard let model = try? VNCoreMLModel(for: CatDog().model) else {
-        guard let model = try? VNCoreMLModel(for: ChiCatDog().model) else {
+        //guard let model = try? VNCoreMLModel(for: ChiCatDog().model) else {
+        guard let model = try? VNCoreMLModel(for: Animals().model) else {
             
             fatalError("加载MLmodel失败")
             
