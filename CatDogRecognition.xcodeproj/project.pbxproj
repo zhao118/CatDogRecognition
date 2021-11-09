@@ -14,6 +14,9 @@
 		0050BA2C27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA2A27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld */; };
 		0050BA2E27397CB800AA27A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0050BA2D27397CB800AA27A4 /* Assets.xcassets */; };
 		0050BA3127397CB800AA27A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0050BA2F27397CB800AA27A4 /* LaunchScreen.storyboard */; };
+		0050BA3A273A13FD00AA27A4 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA39273A13FD00AA27A4 /* PhotoPicker.swift */; };
+		0050BA3D273A141A00AA27A4 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA3C273A141A00AA27A4 /* CameraPicker.swift */; };
+		0050BA4B273A7B3C00AA27A4 /* ChiCatDog.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA4A273A7B3C00AA27A4 /* ChiCatDog.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		0050BA2D27397CB800AA27A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0050BA3027397CB800AA27A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0050BA3227397CB800AA27A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0050BA39273A13FD00AA27A4 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		0050BA3C273A141A00AA27A4 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		0050BA4A273A7B3C00AA27A4 /* ChiCatDog.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ChiCatDog.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				0050BA2127397CB400AA27A4 /* AppDelegate.swift */,
+				0050BA4A273A7B3C00AA27A4 /* ChiCatDog.mlmodel */,
 				0050BA2327397CB400AA27A4 /* SceneDelegate.swift */,
 				0050BA2527397CB400AA27A4 /* ViewController.swift */,
+				0050BA39273A13FD00AA27A4 /* PhotoPicker.swift */,
+				0050BA3C273A141A00AA27A4 /* CameraPicker.swift */,
 				0050BA2727397CB400AA27A4 /* Main.storyboard */,
 				0050BA2D27397CB800AA27A4 /* Assets.xcassets */,
 				0050BA2F27397CB800AA27A4 /* LaunchScreen.storyboard */,
@@ -143,7 +152,10 @@
 				0050BA2627397CB400AA27A4 /* ViewController.swift in Sources */,
 				0050BA2C27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld in Sources */,
 				0050BA2227397CB400AA27A4 /* AppDelegate.swift in Sources */,
+				0050BA3A273A13FD00AA27A4 /* PhotoPicker.swift in Sources */,
+				0050BA3D273A141A00AA27A4 /* CameraPicker.swift in Sources */,
 				0050BA2427397CB400AA27A4 /* SceneDelegate.swift in Sources */,
+				0050BA4B273A7B3C00AA27A4 /* ChiCatDog.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
