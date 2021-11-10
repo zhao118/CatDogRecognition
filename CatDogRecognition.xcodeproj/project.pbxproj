@@ -18,6 +18,7 @@
 		0050BA3D273A141A00AA27A4 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA3C273A141A00AA27A4 /* CameraPicker.swift */; };
 		0050BA4B273A7B3C00AA27A4 /* ChiCatDog.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA4A273A7B3C00AA27A4 /* ChiCatDog.mlmodel */; };
 		0050BA50273AD40400AA27A4 /* Animals.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA4F273AD40400AA27A4 /* Animals.mlmodel */; };
+		0050BA53273B6B3800AA27A4 /* ChiAnimals.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		0050BA3C273A141A00AA27A4 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 		0050BA4A273A7B3C00AA27A4 /* ChiCatDog.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ChiCatDog.mlmodel; sourceTree = "<group>"; };
 		0050BA4F273AD40400AA27A4 /* Animals.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Animals.mlmodel; sourceTree = "<group>"; };
+		0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ChiAnimals.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				0050BA2127397CB400AA27A4 /* AppDelegate.swift */,
+				0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */,
 				0050BA4A273A7B3C00AA27A4 /* ChiCatDog.mlmodel */,
 				0050BA4F273AD40400AA27A4 /* Animals.mlmodel */,
 				0050BA2327397CB400AA27A4 /* SceneDelegate.swift */,
@@ -159,6 +162,7 @@
 				0050BA50273AD40400AA27A4 /* Animals.mlmodel in Sources */,
 				0050BA3D273A141A00AA27A4 /* CameraPicker.swift in Sources */,
 				0050BA2427397CB400AA27A4 /* SceneDelegate.swift in Sources */,
+				0050BA53273B6B3800AA27A4 /* ChiAnimals.mlmodel in Sources */,
 				0050BA4B273A7B3C00AA27A4 /* ChiCatDog.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -38,6 +38,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
             fatalError("The (Camera) Image Picker's image isn't a/n \(UIImage.self) instance.")
         }
         
+        
         self.imageViewM.image = photo
         
         //1.转换图片类型
@@ -47,7 +48,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         //2.加载模型
         //guard let model = try? VNCoreMLModel(for: CatDog().model) else {
         //guard let model = try? VNCoreMLModel(for: ChiCatDog().model) else {
-        guard let model = try? VNCoreMLModel(for: Animals().model) else {
+        guard let model = try? VNCoreMLModel(for: ChiAnimals().model) else {
             
             fatalError("加载MLmodel失败")
             

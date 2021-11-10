@@ -32,7 +32,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="auc-CG-DLf">
+                        <barButtonItem key="leftBarButtonItem" image="photo" catalog="system" id="kpg-md-8kZ">
+                            <color key="tintColor" red="0.97942727799999996" green="0.66545569900000001" blue="0.29245913029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="photoBtn:" destination="BYZ-38-t0r" id="tzy-Pa-rho"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="bEF-fn-Lbu">
+                            <color key="tintColor" red="0.97942727799999996" green="0.66545569900000001" blue="0.29245913029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="pickerBtn:" destination="BYZ-38-t0r" id="9dX-nh-xml"/>
                             </connections>
@@ -66,6 +73,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
