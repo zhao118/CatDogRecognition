@@ -32,18 +32,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="auc-CG-DLf">
-                        <barButtonItem key="leftBarButtonItem" image="photo" catalog="system" id="kpg-md-8kZ">
-                            <color key="tintColor" red="0.97942727799999996" green="0.66545569900000001" blue="0.29245913029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="photoBtn:" destination="BYZ-38-t0r" id="tzy-Pa-rho"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="bEF-fn-Lbu">
-                            <color key="tintColor" red="0.97942727799999996" green="0.66545569900000001" blue="0.29245913029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="pickerBtn:" destination="BYZ-38-t0r" id="9dX-nh-xml"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem image="photo" catalog="system" id="kpg-md-8kZ">
+                                <color key="tintColor" red="0.97942727799999996" green="0.66545569900000001" blue="0.29245913029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="photoBtn:" destination="BYZ-38-t0r" id="tzy-Pa-rho"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="camera" id="bEF-fn-Lbu">
+                                <color key="tintColor" red="0.97942727799999996" green="0.66545569900000001" blue="0.29245913029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pickerBtn:" destination="BYZ-38-t0r" id="9dX-nh-xml"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="imageViewM" destination="kff-3L-uEQ" id="5cX-zo-Wpo"/>

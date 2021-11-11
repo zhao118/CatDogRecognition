@@ -29,7 +29,7 @@ extension ViewController: PHPickerViewControllerDelegate {
     ///   - picker: A picker controller the `photoPicker` property created.
     ///   - results: An array of results. The method presumes the first result contains a photo.
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
-        picker.dismiss(animated: true, completion: nil)
+    picker.dismiss(animated: true, completion: nil)
         
         guard let result = results.first else { return }
         
@@ -99,6 +99,8 @@ extension ViewController: PHPickerViewControllerDelegate {
             }catch {
                 print("执行图像识别请求失败,原因是\(error.localizedDescription)")
             }
+            
+           
         }
         
     }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,9 +16,9 @@
 		0050BA3127397CB800AA27A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0050BA2F27397CB800AA27A4 /* LaunchScreen.storyboard */; };
 		0050BA3A273A13FD00AA27A4 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA39273A13FD00AA27A4 /* PhotoPicker.swift */; };
 		0050BA3D273A141A00AA27A4 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA3C273A141A00AA27A4 /* CameraPicker.swift */; };
-		0050BA4B273A7B3C00AA27A4 /* ChiCatDog.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA4A273A7B3C00AA27A4 /* ChiCatDog.mlmodel */; };
-		0050BA50273AD40400AA27A4 /* Animals.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA4F273AD40400AA27A4 /* Animals.mlmodel */; };
 		0050BA53273B6B3800AA27A4 /* ChiAnimals.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */; };
+		0050BA5D273BB3F900AA27A4 /* Note .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA5C273BB3F900AA27A4 /* Note .swift */; };
+		4255E7882E8B5D790E92CE17 /* Pods_CatDogRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542122150D07DC5AE8D8B57D /* Pods_CatDogRecognition.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +33,13 @@
 		0050BA3227397CB800AA27A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0050BA39273A13FD00AA27A4 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		0050BA3C273A141A00AA27A4 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
-		0050BA4A273A7B3C00AA27A4 /* ChiCatDog.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ChiCatDog.mlmodel; sourceTree = "<group>"; };
-		0050BA4F273AD40400AA27A4 /* Animals.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Animals.mlmodel; sourceTree = "<group>"; };
 		0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ChiAnimals.mlmodel; sourceTree = "<group>"; };
+		0050BA56273BA28300AA27A4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		0050BA57273BA28300AA27A4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		0050BA5C273BB3F900AA27A4 /* Note .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note .swift"; sourceTree = "<group>"; };
+		542122150D07DC5AE8D8B57D /* Pods_CatDogRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatDogRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE3CB9CF8548925D0BBAFDE /* Pods-CatDogRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatDogRecognition.release.xcconfig"; path = "Target Support Files/Pods-CatDogRecognition/Pods-CatDogRecognition.release.xcconfig"; sourceTree = "<group>"; };
+		F084EAB4300B1285DE13F389 /* Pods-CatDogRecognition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatDogRecognition.debug.xcconfig"; path = "Target Support Files/Pods-CatDogRecognition/Pods-CatDogRecognition.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4255E7882E8B5D790E92CE17 /* Pods_CatDogRecognition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				0050BA2027397CB400AA27A4 /* CatDogRecognition */,
 				0050BA1F27397CB400AA27A4 /* Products */,
+				1F6D12AD716BD6D6BFAD5771 /* Pods */,
+				C5D12F148E2C0EF0C75C40FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,8 +77,7 @@
 			children = (
 				0050BA2127397CB400AA27A4 /* AppDelegate.swift */,
 				0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */,
-				0050BA4A273A7B3C00AA27A4 /* ChiCatDog.mlmodel */,
-				0050BA4F273AD40400AA27A4 /* Animals.mlmodel */,
+				0050BA5C273BB3F900AA27A4 /* Note .swift */,
 				0050BA2327397CB400AA27A4 /* SceneDelegate.swift */,
 				0050BA2527397CB400AA27A4 /* ViewController.swift */,
 				0050BA39273A13FD00AA27A4 /* PhotoPicker.swift */,
@@ -85,6 +91,23 @@
 			path = CatDogRecognition;
 			sourceTree = "<group>";
 		};
+		1F6D12AD716BD6D6BFAD5771 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F084EAB4300B1285DE13F389 /* Pods-CatDogRecognition.debug.xcconfig */,
+				EFE3CB9CF8548925D0BBAFDE /* Pods-CatDogRecognition.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5D12F148E2C0EF0C75C40FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				542122150D07DC5AE8D8B57D /* Pods_CatDogRecognition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0050BA3527397CB800AA27A4 /* Build configuration list for PBXNativeTarget "CatDogRecognition" */;
 			buildPhases = (
+				90053BC690DECB53AECD3A95 /* [CP] Check Pods Manifest.lock */,
 				0050BA1A27397CB400AA27A4 /* Sources */,
 				0050BA1B27397CB400AA27A4 /* Frameworks */,
 				0050BA1C27397CB400AA27A4 /* Resources */,
+				1EF428264F749F84BB0E5CBF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +151,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 0050BA1527397CB400AA27A4;
 			productRefGroup = 0050BA1F27397CB400AA27A4 /* Products */;
@@ -150,6 +176,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EF428264F749F84BB0E5CBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatDogRecognition/Pods-CatDogRecognition-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatDogRecognition/Pods-CatDogRecognition-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatDogRecognition/Pods-CatDogRecognition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90053BC690DECB53AECD3A95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatDogRecognition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0050BA1A27397CB400AA27A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -159,11 +227,10 @@
 				0050BA2C27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld in Sources */,
 				0050BA2227397CB400AA27A4 /* AppDelegate.swift in Sources */,
 				0050BA3A273A13FD00AA27A4 /* PhotoPicker.swift in Sources */,
-				0050BA50273AD40400AA27A4 /* Animals.mlmodel in Sources */,
 				0050BA3D273A141A00AA27A4 /* CameraPicker.swift in Sources */,
+				0050BA5D273BB3F900AA27A4 /* Note .swift in Sources */,
 				0050BA2427397CB400AA27A4 /* SceneDelegate.swift in Sources */,
 				0050BA53273B6B3800AA27A4 /* ChiAnimals.mlmodel in Sources */,
-				0050BA4B273A7B3C00AA27A4 /* ChiCatDog.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +241,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0050BA2827397CB400AA27A4 /* Base */,
+				0050BA56273BA28300AA27A4 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -182,6 +250,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0050BA3027397CB800AA27A4 /* Base */,
+				0050BA57273BA28300AA27A4 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -193,6 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -254,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -307,6 +378,7 @@
 		};
 		0050BA3627397CB800AA27A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F084EAB4300B1285DE13F389 /* Pods-CatDogRecognition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +398,7 @@
 		};
 		0050BA3727397CB800AA27A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE3CB9CF8548925D0BBAFDE /* Pods-CatDogRecognition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

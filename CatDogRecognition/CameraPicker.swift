@@ -38,9 +38,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
             fatalError("The (Camera) Image Picker's image isn't a/n \(UIImage.self) instance.")
         }
         
-        
         self.imageViewM.image = photo
-        
         //1.转换图片类型
         guard let CiImage = CIImage(image: photo) else {
             fatalError("不能转化为CIImage类型")
@@ -78,6 +76,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
             }
             
         }
+        
         //将要请求识别的图片转换为正方形,以便于模型识别
         request.imageCropAndScaleOption = .centerCrop
         
@@ -89,6 +88,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         }catch {
             print("执行图像识别请求失败,原因是\(error.localizedDescription)")
         }
+        
     }
     
 }
