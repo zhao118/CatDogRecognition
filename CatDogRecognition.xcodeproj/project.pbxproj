@@ -7,36 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00461B952743A72E004CB778 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00461B942743A72E004CB778 /* PostVC.swift */; };
 		0050BA2227397CB400AA27A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA2127397CB400AA27A4 /* AppDelegate.swift */; };
 		0050BA2427397CB400AA27A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA2327397CB400AA27A4 /* SceneDelegate.swift */; };
-		0050BA2627397CB400AA27A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA2527397CB400AA27A4 /* ViewController.swift */; };
+		0050BA2627397CB400AA27A4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA2527397CB400AA27A4 /* MainVC.swift */; };
 		0050BA2927397CB400AA27A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0050BA2727397CB400AA27A4 /* Main.storyboard */; };
 		0050BA2C27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA2A27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld */; };
 		0050BA2E27397CB800AA27A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0050BA2D27397CB800AA27A4 /* Assets.xcassets */; };
 		0050BA3127397CB800AA27A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0050BA2F27397CB800AA27A4 /* LaunchScreen.storyboard */; };
-		0050BA3A273A13FD00AA27A4 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA39273A13FD00AA27A4 /* PhotoPicker.swift */; };
-		0050BA3D273A141A00AA27A4 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA3C273A141A00AA27A4 /* CameraPicker.swift */; };
 		0050BA53273B6B3800AA27A4 /* ChiAnimals.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */; };
 		0050BA5D273BB3F900AA27A4 /* Note .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA5C273BB3F900AA27A4 /* Note .swift */; };
+		0050BA6A273D65AB00AA27A4 /* Extension-System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA69273D65AB00AA27A4 /* Extension-System.swift */; };
+		0050BA6D273E49F600AA27A4 /* dog.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0050BA6C273E49F600AA27A4 /* dog.jpeg */; };
+		0050BA7F273E64C600AA27A4 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA7E273E64C600AA27A4 /* TabBarVC.swift */; };
 		4255E7882E8B5D790E92CE17 /* Pods_CatDogRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542122150D07DC5AE8D8B57D /* Pods_CatDogRecognition.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00461B942743A72E004CB778 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		0050BA1E27397CB400AA27A4 /* CatDogRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatDogRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0050BA2127397CB400AA27A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0050BA2327397CB400AA27A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0050BA2527397CB400AA27A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0050BA2527397CB400AA27A4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		0050BA2827397CB400AA27A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0050BA2B27397CB400AA27A4 /* CatDogRecognition.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CatDogRecognition.xcdatamodel; sourceTree = "<group>"; };
 		0050BA2D27397CB800AA27A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0050BA3027397CB800AA27A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0050BA3227397CB800AA27A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0050BA39273A13FD00AA27A4 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
-		0050BA3C273A141A00AA27A4 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 		0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ChiAnimals.mlmodel; sourceTree = "<group>"; };
 		0050BA56273BA28300AA27A4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		0050BA57273BA28300AA27A4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		0050BA5C273BB3F900AA27A4 /* Note .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note .swift"; sourceTree = "<group>"; };
+		0050BA69273D65AB00AA27A4 /* Extension-System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-System.swift"; sourceTree = "<group>"; };
+		0050BA6C273E49F600AA27A4 /* dog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpeg; sourceTree = "<group>"; };
+		0050BA7E273E64C600AA27A4 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		542122150D07DC5AE8D8B57D /* Pods_CatDogRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatDogRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE3CB9CF8548925D0BBAFDE /* Pods-CatDogRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatDogRecognition.release.xcconfig"; path = "Target Support Files/Pods-CatDogRecognition/Pods-CatDogRecognition.release.xcconfig"; sourceTree = "<group>"; };
 		F084EAB4300B1285DE13F389 /* Pods-CatDogRecognition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatDogRecognition.debug.xcconfig"; path = "Target Support Files/Pods-CatDogRecognition/Pods-CatDogRecognition.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,13 +81,15 @@
 			children = (
 				0050BA2127397CB400AA27A4 /* AppDelegate.swift */,
 				0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */,
-				0050BA5C273BB3F900AA27A4 /* Note .swift */,
 				0050BA2327397CB400AA27A4 /* SceneDelegate.swift */,
-				0050BA2527397CB400AA27A4 /* ViewController.swift */,
-				0050BA39273A13FD00AA27A4 /* PhotoPicker.swift */,
-				0050BA3C273A141A00AA27A4 /* CameraPicker.swift */,
+				0050BA69273D65AB00AA27A4 /* Extension-System.swift */,
+				0050BA2527397CB400AA27A4 /* MainVC.swift */,
+				0050BA7E273E64C600AA27A4 /* TabBarVC.swift */,
+				00461B942743A72E004CB778 /* PostVC.swift */,
+				0050BA5C273BB3F900AA27A4 /* Note .swift */,
 				0050BA2727397CB400AA27A4 /* Main.storyboard */,
 				0050BA2D27397CB800AA27A4 /* Assets.xcassets */,
+				0050BA6C273E49F600AA27A4 /* dog.jpeg */,
 				0050BA2F27397CB800AA27A4 /* LaunchScreen.storyboard */,
 				0050BA3227397CB800AA27A4 /* Info.plist */,
 				0050BA2A27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld */,
@@ -169,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0050BA3127397CB800AA27A4 /* LaunchScreen.storyboard in Resources */,
+				0050BA6D273E49F600AA27A4 /* dog.jpeg in Resources */,
 				0050BA2E27397CB800AA27A4 /* Assets.xcassets in Resources */,
 				0050BA2927397CB400AA27A4 /* Main.storyboard in Resources */,
 			);
@@ -223,14 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0050BA2627397CB400AA27A4 /* ViewController.swift in Sources */,
+				0050BA2627397CB400AA27A4 /* MainVC.swift in Sources */,
 				0050BA2C27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld in Sources */,
+				0050BA7F273E64C600AA27A4 /* TabBarVC.swift in Sources */,
 				0050BA2227397CB400AA27A4 /* AppDelegate.swift in Sources */,
-				0050BA3A273A13FD00AA27A4 /* PhotoPicker.swift in Sources */,
-				0050BA3D273A141A00AA27A4 /* CameraPicker.swift in Sources */,
+				0050BA6A273D65AB00AA27A4 /* Extension-System.swift in Sources */,
 				0050BA5D273BB3F900AA27A4 /* Note .swift in Sources */,
 				0050BA2427397CB400AA27A4 /* SceneDelegate.swift in Sources */,
 				0050BA53273B6B3800AA27A4 /* ChiAnimals.mlmodel in Sources */,
+				00461B952743A72E004CB778 /* PostVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PX34UR8QJ4;
 				INFOPLIST_FILE = CatDogRecognition/Info.plist;
@@ -391,6 +400,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZhaoQ.CatDogRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -402,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PX34UR8QJ4;
 				INFOPLIST_FILE = CatDogRecognition/Info.plist;
@@ -411,6 +422,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZhaoQ.CatDogRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

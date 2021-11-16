@@ -1,81 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dTe-Ut-Hep">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xVL-Zu-qtd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--拍照-->
+        <scene sceneID="miU-ck-9kN">
+            <objects>
+                <viewController id="gK0-VM-lpg" customClass="PostVC" customModule="CatDogRecognition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RSs-Hj-Yl6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Tos-Rx-n7O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="拍照" image="camera.fill" catalog="system" id="mum-th-eJy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KFJ-pA-1Hz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="-558"/>
+        </scene>
+        <!--拍照识别-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatDogRecognition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVCID" id="BYZ-38-t0r" customClass="MainVC" customModule="CatDogRecognition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kff-3L-uEQ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="kff-3L-uEQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="VM3-Xs-ABr"/>
+                                    <constraint firstAttribute="height" constant="300" id="VM3-Xs-ABr"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  暂无介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfg-f7-KJ3">
+                                <rect key="frame" x="0.0" y="461" width="414" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="MFj-8v-6XK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="狗" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObV-K4-Tbu">
+                                <rect key="frame" x="0.0" y="398" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twr-JO-Q0k">
+                                <rect key="frame" x="157" y="808" width="100" height="44"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.6705882352941176" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Tbr-Ub-p8d"/>
+                                    <constraint firstAttribute="width" constant="100" id="qzk-ru-OTK"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="camera.fill" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="photoBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Eq-UY-v00"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B9t-bA-FLi">
+                                <rect key="frame" x="0.0" y="498" width="414" height="310"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSh-6g-bUc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="C64-C0-nMg"/>
+                                </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.98823529409999999" green="0.6705882353" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="动物识别" id="YcY-dZ-0Iz"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kff-3L-uEQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JsX-6Y-Dx6"/>
+                            <constraint firstItem="ObV-K4-Tbu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8cp-QP-WS0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ObV-K4-Tbu" secondAttribute="trailing" id="J5F-v0-UOx"/>
+                            <constraint firstItem="Twr-JO-Q0k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vnr-9L-bfV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kff-3L-uEQ" secondAttribute="trailing" id="XEY-8Z-Xjb"/>
+                            <constraint firstItem="KSh-6g-bUc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YVD-lm-N0u"/>
+                            <constraint firstItem="Cfg-f7-KJ3" firstAttribute="trailing" secondItem="B9t-bA-FLi" secondAttribute="trailing" id="ZuA-QV-bvP"/>
+                            <constraint firstItem="Twr-JO-Q0k" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="bLl-s5-MOk"/>
+                            <constraint firstItem="Cfg-f7-KJ3" firstAttribute="top" secondItem="ObV-K4-Tbu" secondAttribute="bottom" constant="42" id="bUR-bg-IwZ"/>
+                            <constraint firstItem="kff-3L-uEQ" firstAttribute="top" secondItem="KSh-6g-bUc" secondAttribute="bottom" id="d8Z-P1-2MN"/>
+                            <constraint firstItem="ObV-K4-Tbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gSc-r9-hXU"/>
+                            <constraint firstItem="B9t-bA-FLi" firstAttribute="top" secondItem="Cfg-f7-KJ3" secondAttribute="bottom" id="kdc-IE-E0d"/>
+                            <constraint firstItem="B9t-bA-FLi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mye-dh-3XR"/>
                             <constraint firstItem="kff-3L-uEQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n8W-UI-PSe"/>
+                            <constraint firstItem="KSh-6g-bUc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pd2-3G-Wai"/>
+                            <constraint firstItem="Cfg-f7-KJ3" firstAttribute="leading" secondItem="B9t-bA-FLi" secondAttribute="leading" id="tRj-vH-m6R"/>
+                            <constraint firstItem="Twr-JO-Q0k" firstAttribute="top" secondItem="B9t-bA-FLi" secondAttribute="bottom" id="tmc-Oh-Oet"/>
+                            <constraint firstItem="KSh-6g-bUc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y8K-mV-oCv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B9t-bA-FLi" secondAttribute="trailing" id="zfx-Vb-EBa"/>
+                            <constraint firstItem="ObV-K4-Tbu" firstAttribute="top" secondItem="kff-3L-uEQ" secondAttribute="bottom" constant="10" id="zqt-sW-AKg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="auc-CG-DLf">
-                        <leftBarButtonItems>
-                            <barButtonItem image="photo" catalog="system" id="kpg-md-8kZ">
-                                <color key="tintColor" red="0.97942727799999996" green="0.66545569900000001" blue="0.29245913029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="photoBtn:" destination="BYZ-38-t0r" id="tzy-Pa-rho"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="camera" id="bEF-fn-Lbu">
-                                <color key="tintColor" red="0.97942727799999996" green="0.66545569900000001" blue="0.29245913029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="pickerBtn:" destination="BYZ-38-t0r" id="9dX-nh-xml"/>
-                                </connections>
-                            </barButtonItem>
-                        </leftBarButtonItems>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="拍照识别" id="mr4-Kz-wEM">
+                        <imageReference key="image" image="camera.fill" catalog="system" symbolScale="small"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
+                    </tabBarItem>
                     <connections>
+                        <outlet property="animalLabel" destination="ObV-K4-Tbu" id="wgy-vJ-GXH"/>
                         <outlet property="imageViewM" destination="kff-3L-uEQ" id="5cX-zo-Wpo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908.69565217391312" y="76.339285714285708"/>
+            <point key="canvasLocation" x="1020" y="-558"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="7gz-c8-Asd">
+        <!--了解动物-->
+        <scene sceneID="C1K-MA-TM1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dTe-Ut-Hep" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K7j-BT-1wP">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xtT-sF-LQm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HVr-rx-F7s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tableViewController id="3jp-ih-jKV" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qii-JE-cYX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dab-VT-aCW">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dab-VT-aCW" id="Wxf-Pr-ZED">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3jp-ih-jKV" id="vfi-Vx-VEY"/>
+                            <outlet property="delegate" destination="3jp-ih-jKV" id="2EQ-o6-SCU"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="了解动物" id="7db-kl-PJh">
+                        <imageReference key="image" image="magnifyingglass.circle" catalog="system" symbolScale="small"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
+                    </tabBarItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wie-NT-LQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1.4492753623188408" y="76.339285714285708"/>
+            <point key="canvasLocation" x="270" y="158"/>
+        </scene>
+        <!--Tab BarVC-->
+        <scene sceneID="1Rh-KI-4uT">
+            <objects>
+                <tabBarController id="xVL-Zu-qtd" customClass="TabBarVC" customModule="CatDogRecognition" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hKI-43-Jk5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.97942727799999996" green="0.66545569900000001" blue="0.29245913029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3jp-ih-jKV" kind="relationship" relationship="viewControllers" id="bg5-Cl-pXr"/>
+                        <segue destination="gK0-VM-lpg" kind="relationship" relationship="viewControllers" id="YAG-jq-Dvz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AI4-F4-EXF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-532" y="-151"/>
         </scene>
     </scenes>
     <resources>
-        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="dog.jpeg" width="225" height="225"/>
+        <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

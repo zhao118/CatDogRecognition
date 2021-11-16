@@ -2,14 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>打开后可以存储照片</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>需要从相册中选取照片用于识别</string>
-	<key>NSCameraUsageDescription</key>
-	<string>需要使用照相机拍照用于识别</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>识动物</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -26,6 +22,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>需要使用照相机拍照用于识别</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>打开后可以存储照片</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>需要从相册中选取照片用于识别</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
