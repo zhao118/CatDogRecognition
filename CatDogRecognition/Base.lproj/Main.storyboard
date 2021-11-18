@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--拍照-->
+        <!--拍照识别-->
         <scene sceneID="miU-ck-9kN">
             <objects>
                 <viewController id="gK0-VM-lpg" customClass="PostVC" customModule="CatDogRecognition" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,9 @@
                         <viewLayoutGuide key="safeArea" id="Tos-Rx-n7O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="拍照" image="camera.fill" catalog="system" id="mum-th-eJy"/>
+                    <tabBarItem key="tabBarItem" title="拍照识别" id="mum-th-eJy">
+                        <imageReference key="image" image="camera.fill" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFJ-pA-1Hz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,29 +36,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="kff-3L-uEQ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="VM3-Xs-ABr"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  暂无介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfg-f7-KJ3">
-                                <rect key="frame" x="0.0" y="461" width="414" height="37"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="MFj-8v-6XK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="secondaryLabelColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="狗" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObV-K4-Tbu">
-                                <rect key="frame" x="0.0" y="398" width="414" height="21"/>
+                                <rect key="frame" x="198" y="354" width="18.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twr-JO-Q0k">
                                 <rect key="frame" x="157" y="808" width="100" height="44"/>
-                                <color key="backgroundColor" red="0.9882352941176471" green="0.6705882352941176" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.67450980392156867" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Tbr-Ub-p8d"/>
                                     <constraint firstAttribute="width" constant="100" id="qzk-ru-OTK"/>
@@ -73,47 +66,27 @@
                                     <action selector="photoBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Eq-UY-v00"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B9t-bA-FLi">
-                                <rect key="frame" x="0.0" y="498" width="414" height="310"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B9t-bA-FLi">
+                                <rect key="frame" x="0.0" y="385" width="414" height="413"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSh-6g-bUc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="C64-C0-nMg"/>
-                                </constraints>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.98823529409999999" green="0.6705882353" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="动物识别" id="YcY-dZ-0Iz"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ObV-K4-Tbu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8cp-QP-WS0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ObV-K4-Tbu" secondAttribute="trailing" id="J5F-v0-UOx"/>
                             <constraint firstItem="Twr-JO-Q0k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vnr-9L-bfV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kff-3L-uEQ" secondAttribute="trailing" id="XEY-8Z-Xjb"/>
-                            <constraint firstItem="KSh-6g-bUc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YVD-lm-N0u"/>
-                            <constraint firstItem="Cfg-f7-KJ3" firstAttribute="trailing" secondItem="B9t-bA-FLi" secondAttribute="trailing" id="ZuA-QV-bvP"/>
                             <constraint firstItem="Twr-JO-Q0k" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="bLl-s5-MOk"/>
-                            <constraint firstItem="Cfg-f7-KJ3" firstAttribute="top" secondItem="ObV-K4-Tbu" secondAttribute="bottom" constant="42" id="bUR-bg-IwZ"/>
-                            <constraint firstItem="kff-3L-uEQ" firstAttribute="top" secondItem="KSh-6g-bUc" secondAttribute="bottom" id="d8Z-P1-2MN"/>
+                            <constraint firstItem="Twr-JO-Q0k" firstAttribute="top" secondItem="B9t-bA-FLi" secondAttribute="bottom" constant="10" id="dps-6i-iWq"/>
+                            <constraint firstItem="B9t-bA-FLi" firstAttribute="top" secondItem="ObV-K4-Tbu" secondAttribute="bottom" constant="10" id="eOo-SJ-FSd"/>
                             <constraint firstItem="ObV-K4-Tbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gSc-r9-hXU"/>
-                            <constraint firstItem="B9t-bA-FLi" firstAttribute="top" secondItem="Cfg-f7-KJ3" secondAttribute="bottom" id="kdc-IE-E0d"/>
-                            <constraint firstItem="B9t-bA-FLi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mye-dh-3XR"/>
+                            <constraint firstItem="B9t-bA-FLi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jn1-tK-ELx"/>
                             <constraint firstItem="kff-3L-uEQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n8W-UI-PSe"/>
-                            <constraint firstItem="KSh-6g-bUc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pd2-3G-Wai"/>
-                            <constraint firstItem="Cfg-f7-KJ3" firstAttribute="leading" secondItem="B9t-bA-FLi" secondAttribute="leading" id="tRj-vH-m6R"/>
-                            <constraint firstItem="Twr-JO-Q0k" firstAttribute="top" secondItem="B9t-bA-FLi" secondAttribute="bottom" id="tmc-Oh-Oet"/>
-                            <constraint firstItem="KSh-6g-bUc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y8K-mV-oCv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B9t-bA-FLi" secondAttribute="trailing" id="zfx-Vb-EBa"/>
+                            <constraint firstItem="B9t-bA-FLi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qYo-42-j6P"/>
+                            <constraint firstItem="kff-3L-uEQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xCH-OW-TTt"/>
                             <constraint firstItem="ObV-K4-Tbu" firstAttribute="top" secondItem="kff-3L-uEQ" secondAttribute="bottom" constant="10" id="zqt-sW-AKg"/>
                         </constraints>
                     </view>
@@ -123,6 +96,7 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="animalLabel" destination="ObV-K4-Tbu" id="wgy-vJ-GXH"/>
+                        <outlet property="animalTraitTextView" destination="B9t-bA-FLi" id="6Pu-Sn-TIJ"/>
                         <outlet property="imageViewM" destination="kff-3L-uEQ" id="5cX-zo-Wpo"/>
                     </connections>
                 </viewController>
@@ -130,22 +104,82 @@
             </objects>
             <point key="canvasLocation" x="1020" y="-558"/>
         </scene>
-        <!--了解动物-->
+        <!--认识动物-->
         <scene sceneID="C1K-MA-TM1">
             <objects>
-                <tableViewController id="3jp-ih-jKV" sceneMemberID="viewController">
+                <tableViewController id="3jp-ih-jKV" customClass="AnimalsTableVC" customModule="CatDogRecognition" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qii-JE-cYX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dab-VT-aCW">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AnimalsTableViewCell" rowHeight="405" id="dab-VT-aCW" customClass="AnimalsTableViewCell" customModule="CatDogRecognition" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="405"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dab-VT-aCW" id="Wxf-Pr-ZED">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="405"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="WEl-AL-I1A">
+                                            <rect key="frame" x="20" y="11" width="374" height="170"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="170" id="NZX-ie-HbI"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Is0-8q-OCa">
+                                            <rect key="frame" x="20" y="191" width="374" height="39"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HUn-mH-4ew">
+                                                    <rect key="frame" x="0.0" y="0.0" width="57" height="17"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名称:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiR-YC-220">
+                                                            <rect key="frame" x="0.0" y="0.0" width="33" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="狗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eI-bp-jDG">
+                                                            <rect key="frame" x="43" y="0.0" width="14" height="17"/>
+                                                            <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="53L-Om-6PE">
+                                                    <rect key="frame" x="0.0" y="22" width="113" height="17"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特征:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wk-Hj-iZl">
+                                                            <rect key="frame" x="0.0" y="0.0" width="33" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人类好朋友" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ay2-gV-HjG">
+                                                            <rect key="frame" x="43" y="0.0" width="70" height="16"/>
+                                                            <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WEl-AL-I1A" firstAttribute="top" secondItem="Wxf-Pr-ZED" secondAttribute="topMargin" id="4X8-XX-NA2"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Is0-8q-OCa" secondAttribute="trailing" id="5at-RW-t7y"/>
+                                        <constraint firstItem="Is0-8q-OCa" firstAttribute="leading" secondItem="Wxf-Pr-ZED" secondAttribute="leadingMargin" id="G5W-uC-xf4"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="WEl-AL-I1A" secondAttribute="trailing" id="H9H-rm-S0r"/>
+                                        <constraint firstItem="Is0-8q-OCa" firstAttribute="top" secondItem="WEl-AL-I1A" secondAttribute="bottom" constant="10" id="Wxu-f4-Zmg"/>
+                                        <constraint firstItem="WEl-AL-I1A" firstAttribute="leading" secondItem="Wxf-Pr-ZED" secondAttribute="leadingMargin" id="zUQ-2e-aK4"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="animalImage" destination="WEl-AL-I1A" id="Ura-sK-YHo"/>
+                                    <outlet property="animalNameLabel" destination="8eI-bp-jDG" id="Jmw-aQ-qHb"/>
+                                    <outlet property="animalTraitLabel" destination="Ay2-gV-HjG" id="wlb-dW-mji"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -153,14 +187,83 @@
                             <outlet property="delegate" destination="3jp-ih-jKV" id="2EQ-o6-SCU"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="了解动物" id="7db-kl-PJh">
-                        <imageReference key="image" image="magnifyingglass.circle" catalog="system" symbolScale="small"/>
+                    <tabBarItem key="tabBarItem" title="认识动物" id="7db-kl-PJh">
+                        <imageReference key="image" image="magnifyingglass.circle" catalog="system" symbolScale="medium"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
                     </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wie-NT-LQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="270" y="158"/>
+            <point key="canvasLocation" x="269.56521739130437" y="157.36607142857142"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="ZkS-Cg-1lS">
+            <objects>
+                <viewController storyboardIdentifier="DetailVCID" id="0HR-81-Xdn" customClass="DetailVC" customModule="CatDogRecognition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ebw-ZU-7HM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9hT-JO-Kdg">
+                                <rect key="frame" x="16" y="54" width="382" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Hdm-Y6-yBD"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Rj-X9-6zn">
+                                <rect key="frame" x="16" y="264" width="382" height="43"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0yt-zi-7Ub">
+                                        <rect key="frame" x="0.0" y="0.0" width="57.5" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名称:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sW-rK-by5">
+                                                <rect key="frame" x="0.0" y="0.0" width="33" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="狗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sm4-p7-AVo">
+                                                <rect key="frame" x="43" y="0.0" width="14.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="dBN-cA-F8v">
+                                        <rect key="frame" x="0.0" y="27" width="70" height="16"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人类好朋友" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzp-5Y-XAb">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="16"/>
+                                                <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WL8-rd-1ab"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WL8-rd-1ab" firstAttribute="trailing" secondItem="9hT-JO-Kdg" secondAttribute="trailing" constant="16" id="3KZ-dL-WeT"/>
+                            <constraint firstItem="WL8-rd-1ab" firstAttribute="trailing" secondItem="6Rj-X9-6zn" secondAttribute="trailing" constant="16" id="L4H-Va-nr7"/>
+                            <constraint firstItem="6Rj-X9-6zn" firstAttribute="top" secondItem="9hT-JO-Kdg" secondAttribute="bottom" constant="10" id="MzT-DO-sLa"/>
+                            <constraint firstItem="9hT-JO-Kdg" firstAttribute="top" secondItem="WL8-rd-1ab" secondAttribute="top" constant="10" id="QFS-WQ-gV6"/>
+                            <constraint firstItem="6Rj-X9-6zn" firstAttribute="leading" secondItem="WL8-rd-1ab" secondAttribute="leading" constant="16" id="Rha-46-5JQ"/>
+                            <constraint firstItem="9hT-JO-Kdg" firstAttribute="leading" secondItem="WL8-rd-1ab" secondAttribute="leading" constant="16" id="eZM-qV-oVm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animalImage" destination="9hT-JO-Kdg" id="VDa-Z5-c3X"/>
+                        <outlet property="animalName" destination="sm4-p7-AVo" id="07i-7e-7KP"/>
+                        <outlet property="animalTrait" destination="Mzp-5Y-XAb" id="Obt-ae-4d8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y1z-va-xEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="168.75"/>
         </scene>
         <!--Tab BarVC-->
         <scene sceneID="1Rh-KI-4uT">

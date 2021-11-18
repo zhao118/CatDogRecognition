@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		00461B952743A72E004CB778 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00461B942743A72E004CB778 /* PostVC.swift */; };
+		00461B9A2744087B004CB778 /* AnimalsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00461B992744087B004CB778 /* AnimalsTableVC.swift */; };
+		00461B9D274408A1004CB778 /* AnimalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00461B9C274408A1004CB778 /* AnimalsTableViewCell.swift */; };
+		00461BA02744F334004CB778 /* AnimalsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00461B9F2744F334004CB778 /* AnimalsData.swift */; };
+		00461BA527455992004CB778 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00461BA427455992004CB778 /* DetailVC.swift */; };
+		00461BBD27463367004CB778 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00461BBC27463367004CB778 /* Launch Screen.storyboard */; };
+		00461BC52746404E004CB778 /* AnimalsTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00461BC42746404E004CB778 /* AnimalsTrait.swift */; };
 		0050BA2227397CB400AA27A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA2127397CB400AA27A4 /* AppDelegate.swift */; };
 		0050BA2427397CB400AA27A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA2327397CB400AA27A4 /* SceneDelegate.swift */; };
 		0050BA2627397CB400AA27A4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA2527397CB400AA27A4 /* MainVC.swift */; };
 		0050BA2927397CB400AA27A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0050BA2727397CB400AA27A4 /* Main.storyboard */; };
 		0050BA2C27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA2A27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld */; };
 		0050BA2E27397CB800AA27A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0050BA2D27397CB800AA27A4 /* Assets.xcassets */; };
-		0050BA3127397CB800AA27A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0050BA2F27397CB800AA27A4 /* LaunchScreen.storyboard */; };
 		0050BA53273B6B3800AA27A4 /* ChiAnimals.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */; };
 		0050BA5D273BB3F900AA27A4 /* Note .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA5C273BB3F900AA27A4 /* Note .swift */; };
 		0050BA6A273D65AB00AA27A4 /* Extension-System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050BA69273D65AB00AA27A4 /* Extension-System.swift */; };
@@ -25,6 +30,12 @@
 
 /* Begin PBXFileReference section */
 		00461B942743A72E004CB778 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		00461B992744087B004CB778 /* AnimalsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTableVC.swift; sourceTree = "<group>"; };
+		00461B9C274408A1004CB778 /* AnimalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTableViewCell.swift; sourceTree = "<group>"; };
+		00461B9F2744F334004CB778 /* AnimalsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsData.swift; sourceTree = "<group>"; };
+		00461BA427455992004CB778 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		00461BBC27463367004CB778 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		00461BC42746404E004CB778 /* AnimalsTrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTrait.swift; sourceTree = "<group>"; };
 		0050BA1E27397CB400AA27A4 /* CatDogRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatDogRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0050BA2127397CB400AA27A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0050BA2327397CB400AA27A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,11 +43,9 @@
 		0050BA2827397CB400AA27A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0050BA2B27397CB400AA27A4 /* CatDogRecognition.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CatDogRecognition.xcdatamodel; sourceTree = "<group>"; };
 		0050BA2D27397CB800AA27A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0050BA3027397CB800AA27A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0050BA3227397CB800AA27A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ChiAnimals.mlmodel; sourceTree = "<group>"; };
 		0050BA56273BA28300AA27A4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		0050BA57273BA28300AA27A4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		0050BA5C273BB3F900AA27A4 /* Note .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note .swift"; sourceTree = "<group>"; };
 		0050BA69273D65AB00AA27A4 /* Extension-System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-System.swift"; sourceTree = "<group>"; };
 		0050BA6C273E49F600AA27A4 /* dog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpeg; sourceTree = "<group>"; };
@@ -80,17 +89,22 @@
 			isa = PBXGroup;
 			children = (
 				0050BA2127397CB400AA27A4 /* AppDelegate.swift */,
-				0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */,
 				0050BA2327397CB400AA27A4 /* SceneDelegate.swift */,
-				0050BA69273D65AB00AA27A4 /* Extension-System.swift */,
 				0050BA2527397CB400AA27A4 /* MainVC.swift */,
 				0050BA7E273E64C600AA27A4 /* TabBarVC.swift */,
 				00461B942743A72E004CB778 /* PostVC.swift */,
+				00461B992744087B004CB778 /* AnimalsTableVC.swift */,
+				00461B9C274408A1004CB778 /* AnimalsTableViewCell.swift */,
+				0050BA52273B6B3800AA27A4 /* ChiAnimals.mlmodel */,
+				0050BA69273D65AB00AA27A4 /* Extension-System.swift */,
+				00461B9F2744F334004CB778 /* AnimalsData.swift */,
+				00461BC42746404E004CB778 /* AnimalsTrait.swift */,
+				00461BA427455992004CB778 /* DetailVC.swift */,
 				0050BA5C273BB3F900AA27A4 /* Note .swift */,
+				00461BBC27463367004CB778 /* Launch Screen.storyboard */,
 				0050BA2727397CB400AA27A4 /* Main.storyboard */,
 				0050BA2D27397CB800AA27A4 /* Assets.xcassets */,
 				0050BA6C273E49F600AA27A4 /* dog.jpeg */,
-				0050BA2F27397CB800AA27A4 /* LaunchScreen.storyboard */,
 				0050BA3227397CB800AA27A4 /* Info.plist */,
 				0050BA2A27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld */,
 			);
@@ -174,9 +188,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0050BA3127397CB800AA27A4 /* LaunchScreen.storyboard in Resources */,
 				0050BA6D273E49F600AA27A4 /* dog.jpeg in Resources */,
 				0050BA2E27397CB800AA27A4 /* Assets.xcassets in Resources */,
+				00461BBD27463367004CB778 /* Launch Screen.storyboard in Resources */,
 				0050BA2927397CB400AA27A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,15 +244,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00461B9D274408A1004CB778 /* AnimalsTableViewCell.swift in Sources */,
 				0050BA2627397CB400AA27A4 /* MainVC.swift in Sources */,
+				00461BA527455992004CB778 /* DetailVC.swift in Sources */,
 				0050BA2C27397CB400AA27A4 /* CatDogRecognition.xcdatamodeld in Sources */,
+				00461BA02744F334004CB778 /* AnimalsData.swift in Sources */,
 				0050BA7F273E64C600AA27A4 /* TabBarVC.swift in Sources */,
+				00461BC52746404E004CB778 /* AnimalsTrait.swift in Sources */,
 				0050BA2227397CB400AA27A4 /* AppDelegate.swift in Sources */,
 				0050BA6A273D65AB00AA27A4 /* Extension-System.swift in Sources */,
 				0050BA5D273BB3F900AA27A4 /* Note .swift in Sources */,
 				0050BA2427397CB400AA27A4 /* SceneDelegate.swift in Sources */,
 				0050BA53273B6B3800AA27A4 /* ChiAnimals.mlmodel in Sources */,
 				00461B952743A72E004CB778 /* PostVC.swift in Sources */,
+				00461B9A2744087B004CB778 /* AnimalsTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,15 +271,6 @@
 				0050BA56273BA28300AA27A4 /* zh-Hans */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0050BA2F27397CB800AA27A4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0050BA3027397CB800AA27A4 /* Base */,
-				0050BA57273BA28300AA27A4 /* zh-Hans */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

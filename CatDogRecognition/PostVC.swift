@@ -16,7 +16,4 @@ class PostVC: UIViewController {
        
     }
     
-
-   
-
 }

@@ -20,16 +20,19 @@ class MainVC: UIViewController {
     
     @IBOutlet weak var imageViewM: UIImageView!
     
+    @IBOutlet weak var animalTraitTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        modelRecognitionImage(imageModel: photo, animalLabel: animalLabel)
+        //识别照片-从TabBar中点击相机进入
+        modelRecognitionImage( photo, animalLabel, animalTraitTextView )
         
-        if flag {
-            
-            imageViewM.image = photo
-            
-        }
+        if flag { imageViewM.image = photo }
+        
+        self.title = "动物识别"
+        
+        print(animalsImages.count)
     }
     
     
@@ -44,6 +47,7 @@ class MainVC: UIViewController {
         picker.didFinishPicking { [unowned picker] items, cancelled in
             //点击取消,没有选择图片
             if cancelled{
+                
                 picker.dismiss(animated: true, completion: nil)
                 
             }else{
@@ -52,7 +56,8 @@ class MainVC: UIViewController {
                 
                 let modelImage = photo.image
                 
-                self.modelRecognitionImage(imageModel: modelImage, animalLabel: self.animalLabel)
+                //识别照片-点击动物识别页的拍照按钮进入
+                self.modelRecognitionImage( modelImage, self.animalLabel, self.animalTraitTextView )
                 
                 picker.dismiss(animated: true, completion: nil )
                 
